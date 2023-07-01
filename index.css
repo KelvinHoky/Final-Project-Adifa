@@ -6,16 +6,67 @@
 
 body{
     font-family: 'Oswald', sans-serif !important;
-    overflow: hidden;
 }
 
 .home{
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-size: cover;
     width: 100vw;
     height: 100vh;
     color: #fff;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url(img/Homeimg.png);
+    overflow: hidden;
+}
+
+.homenav li a{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.homenav li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.scrollspy-custom{
+    position: relative;
+}
+
+.about-nav{
+    position: sticky;
+    top: 15px;
+}
+
+.about-nav a{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.breadcrumb{
+    margin-top: 7rem;
+}
+
+.breadcrumb-item{
+    color: #2F2F2F;
+    text-align: center;
+font-size: 1.125rem;
+font-weight: 500;
+}
+
+.breadcrumb-item a{
+    color: #2F2F2F;
+    text-align: center;
+font-size: 1.125rem;
+font-weight: 500;
+text-decoration: none;
+}
+
+.breadcrumb-item .active{
+    color:#DC3F3F;
+    border-bottom: #DC3F3F 2px solid;
+}
+
+.list-group-item{
+    all:unset !important;
 }
