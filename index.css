@@ -41,6 +41,7 @@ body{
 .about-nav a{
     font-weight: 400;
     font-size: 1.25rem;
+    line-height: normal;
 }
 
 .breadcrumb{
@@ -69,4 +70,49 @@ text-decoration: none;
 
 .list-group-item{
     all:unset !important;
+}
+
+.about-nav a{
+    display: flex;
+}
+
+.about-nav a i{
+    visibility: hidden;
+    color: #DC3F3F;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.about-nav .active  i{
+    visibility: visible;
+}
+
+.section-title{
+    font-size: 2.1875rem;
+    font-weight: 500;
+    letter-spacing: 0.03281rem;
+    color: #2F2F2F;
+    line-height: 112.2%;
+}
+
+.red-title{
+    color:#DC3F3F;
+}
+
+.section-text{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #2F2F2F;
+    line-height: normal;
+    letter-spacing: -0.01125rem;
+    font-family: Helvetica, sans-serif;
+}
+
+.section-sub-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.015rem;
+    font-family: Helvetica, sans-serif;
+    line-height: normal;
+    color: #2F2F2F;
 }
