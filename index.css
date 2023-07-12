@@ -6,18 +6,18 @@
 
 body{
     font-family: 'Oswald', sans-serif !important;
+    scroll-behavior: smooth;
 }
+
 
 .home{
     background-position: center;
     background-repeat: no-repeat !important;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
     color: #fff;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url(img/Homeimg.png);
-    overflow: hidden;
 }
 
 .homenav li a{
@@ -44,7 +44,7 @@ body{
     line-height: normal;
 }
 
-.breadcrumb{
+.about-bread .breadcrumb{
     margin-top: 7rem;
 }
 
@@ -64,7 +64,11 @@ text-decoration: none;
 }
 
 .breadcrumb-item .active{
-    color:#DC3F3F;
+    color:#DC3F3F !important;
+    border-bottom: #DC3F3F 2px solid;
+}
+
+.breadcrumb-item a:hover{
     border-bottom: #DC3F3F 2px solid;
 }
 
@@ -74,6 +78,7 @@ text-decoration: none;
 
 .about-nav a{
     display: flex;
+    cursor: context-menu !important;
 }
 
 .about-nav a i{
@@ -81,6 +86,7 @@ text-decoration: none;
     color: #DC3F3F;
     font-size: 1.5rem;
     margin: 0 0.5rem;
+
 }
 
 .about-nav .active  i{
@@ -115,4 +121,155 @@ text-decoration: none;
     font-family: Helvetica, sans-serif;
     line-height: normal;
     color: #2F2F2F;
+}
+
+/* service */
+.service{
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(img/serviceimg.png);
+}
+
+.whitelay{
+    background-color: rgba(255,255,255,0.6);
+}
+
+.service-title{
+    color: #FFF;
+font-family: Oswald;
+font-size: 2.6875rem;
+font-style: normal;
+font-weight: 569;
+line-height: 112.2%;
+letter-spacing: 0.04031rem;
+text-align: left;
+}
+
+.service-text{
+    color: #FFF;
+font-family: Helvetica;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.01125rem;
+text-align: left;
+}
+
+.right-sec form .form-outline .form-control , .form-select{
+    color: #a9a9a9 !important;
+font-family: Helvetica;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 112.2%;
+letter-spacing: 0.015rem;
+}
+
+.right-sec form .form-outline .form-control::placeholder{
+    color: #a9a9a9 !important   ;
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112.2%;
+    letter-spacing: 0.015rem;
+}
+
+
+.dropdown1  label {
+    position: relative;
+  }
+  
+.dropdown1  label::before{
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background: url('data:image/svg+xml,<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 12L0.138785 0.749999L14.8612 0.75L7.5 12Z" fill="%23DC3F3F"/></svg>');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.custom-btn{
+    background-color: #DC3F3F !important;
+    border: 2px solid #DC3F3F !important;
+    color: #2F2F2F !important;
+    font-family: Helvetica !important;
+    font-size: 1rem !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 112.2% !important;
+    letter-spacing: 0.015rem !important;
+    transition: 280ms ease-in-out !important;
+}
+
+.custom-btn:hover{
+    background-color: #2F2F2F !important;
+    border: 2px solid #2F2F2F !important;
+    color: #DC3F3F !important;
+}
+
+/* left sec */
+.left-sec{
+    height: 100vh;
+}
+
+.right-sec{
+    height: 100vh   ;
+}
+
+.service-breadcrumb .breadcrumb-item a{
+    color: #fff;
+}
+
+@media (max-width:992px){
+    .left-sec{
+        height: unset;
+    }
+
+    .whitelay{
+        background-color: rgba(255,255,255,0);
+    }
+
+    .right-sec{
+        height: unset;
+    }
+}
+
+@media (max-width:576px){
+    .classic .option{
+        font-size: 0.8rem !important;
+    }
+
+    .right-sec form .form-outline .form-control::placeholder ,.form-select {
+        font-size: 0.8rem !important;
+    }
+
+    .breadcrumb-item{
+        font-size: 1rem;
+    }
+
+    .breadcrumb-item a{
+        font-size: 1rem;
+    }
+
+    .service-title  {
+font-size: 1.5rem;
+    }
+
+    .service-text{
+font-size: 0.8rem;
+    }
+
+    .custom-btn{
+font-size: 0.8rem !important;
+
+}
 }
