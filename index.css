@@ -170,6 +170,7 @@ line-height: 112.2%;
 letter-spacing: 0.015rem;
 }
 
+
 .right-sec form .form-outline .form-control::placeholder{
     color: #a9a9a9 !important   ;
     font-family: Helvetica;
@@ -272,4 +273,133 @@ font-size: 0.8rem;
 font-size: 0.8rem !important;
 
 }
+}
+
+/* self help section */
+.help-title{
+    color: #2F2F2F;
+text-align: center;
+font-family: Helvetica;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.025rem;
+}
+
+.help-text{
+    color: #2F2F2F;
+text-align: center;
+font-family: Helvetica;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.01125rem;
+}
+
+.red-text{
+    color: #DC3F3F;
+text-align: center;
+font-family: Helvetica;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.01125rem;
+}
+
+.book-title{
+    color: #DC3F3F;
+text-align: center;
+font-family: Helvetica;
+font-size: 2.6875rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.02688rem;
+}
+
+.book-text{
+    color: #2F2F2F;
+font-family: Helvetica;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.01125rem;
+}
+
+@media (max-width:576px){
+    .help-title{
+        font-size: 1.5rem;
+    }
+}
+
+.btn-find-more{
+    border: solid 2px #DC3F3F;
+    background-color: #DC3F3F;
+    color: #2F2F2F;
+font-family: Helvetica;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.01125rem;
+transition: 280ms ease-in-out;
+}
+
+.btn-find-more:hover{
+    border: solid 2px #2F2F2F;
+    background-color: #2F2F2F;
+    color:#DC3F3F;
+}
+
+.support-title{
+    color: #2F2F2F;
+font-family: Oswald;
+font-size: 2.6875rem;
+font-style: normal;
+font-weight: 569;
+line-height: 112.2%;
+letter-spacing: 0.04031rem;
+}
+
+.support-text{
+    color: #2F2F2F;
+font-family: Helvetica;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.01125rem;
+}
+
+.support-subtitle{
+    color: #2F2F2F;
+font-family: Helvetica;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.00563rem;
+}
+
+.support-btn{
+    color: #FFF;
+text-align: center;
+font-family: Oswald;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 569;
+line-height: 129.7%;
+background-color: #2F2F2F;
+border-radius: 2.5rem;
+border: 2px solid #2F2F2F;
+transition: 280ms ease-in-out;
+}
+
+.support-btn:hover{
+    background-color: #FFF;
+    color: #2F2F2F
 }

@@ -31,9 +31,9 @@
 <body>
     
 <div class="container-fluid service d-flex flex-column">
-    <div class="container-fluid mt-5 d-lg-none d-flex justify-content-center p-0">
+    <div class="container-fluid mt-5 d-lg-none d-flex pt-5 justify-content-center p-0">
         <nav aria-label="breadcrumb">
-            <ul class="breadcrumb text-uppercase justify-content-center service-breadcrumb">
+            <ul class="breadcrumb text-uppercase d-flex justify-content-center service-breadcrumb">
               <li class="breadcrumb-item"><a class="mx-md-3" href="/" >Home</a></li>
               <li class="breadcrumb-item"><a class="mx-md-3" href="about.html">About</a></li>
               <li class="breadcrumb-item"><a class="mx-md-3 active" href="service.html">Services</a></li>
@@ -63,7 +63,7 @@
                 </div> 
             </div>
         </div>
-        <div class="col-lg-6 whitelay d-flex flex-column justify-content-start justify-content-lg-center align-content-center text-center right-sec p-lg-5 px-5">
+        <div class="col-lg-6 whitelay d-flex flex-column justify-content-start justify-content-lg-center align-content-center text-center right-sec p-lg-5 px-5 py-5">
             <form class="px-sm-5 px-sm-3 px-0">
                             <!-- name -->
                             <div class="form-outline mb-4">
@@ -81,8 +81,8 @@
                                 <div class="form-outline">
                                     <div class="dropdown1">
                                         <label class="d-flex">
-                                            <select class="form-select form-control py-3 classic d-flex">
-                                                <option value="" selected class="option">Counseling Method</option>
+                                            <select class="form-select form-control py-3 classic d-flex" id="sel" onclick="document.getElementById('sel').style='color: #a9a9a9';">
+                                                <option value="" selected="selected">Counseling Method</option>
                                                 <option value="1" class="option">Online</option>
                                                 <option value="2" class="option">Physical</option>
                                               </select>
@@ -118,11 +118,11 @@
                                   <div class="form-outline">
                                       <div class="dropdown1">
                                           <label class="d-flex">
-                                              <select class="form-select py-3 classic d-flex">
-                                                  <option value="" selected>Location</option>
-                                                  <option value="1">Malaysia</option>
-                                                  <option value="2">Indonesia</option>
-                                                  <option value="3">Online</option>
+                                              <select class="form-select py-3 classic d-flex custom-select">
+                                                  <option value="" selected="selected">Location</option>
+                                                  <option value="1" class="option">Malaysia</option>
+                                                  <option value="2" class="option">Indonesia</option>
+                                                  <option value="3" class="option">Online</option>
                                                 </select>
                                           </label>
                                       </div>
@@ -133,6 +133,7 @@
         </div>
     </div>
 </div>
+
 
 </body>
 </html>
