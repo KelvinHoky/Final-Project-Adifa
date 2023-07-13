@@ -425,9 +425,20 @@ letter-spacing: -0.01125rem;
     margin: 2rem 0;
 }
 
+.footer-list li a:hover {
+    cursor: context-menu;
+    border-bottom: 2px solid #FFF;
+}
+
 .footer-list2 li{
     margin: 1rem 0;
 }
+
+.footer-list2 li a:hover{
+    cursor: context-menu;
+    border-bottom: 2px solid #fff;
+}
+
 
 @media (max-width:576px){
     .icon a i{
